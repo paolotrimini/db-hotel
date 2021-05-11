@@ -16,3 +16,4 @@ NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionament
 5. SELECT * FROM ospiti WHERE name LIKE 'E%';
 6. SELECT name, lastname, date_of_birth, YEAR(NOW()) - YEAR (date_of_birth) AS 'eta'
    FROM ospiti WHERE YEAR(NOW()) - YEAR (date_of_birth) < 30;
+7. SELECT * FROM prenotazioni WHERE created_at < '2018-05-01';
