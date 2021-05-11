@@ -8,3 +8,7 @@ GOAL: in un foglio di testo, scrivere le query necessarie per rispondere ai segu
 ● Seleziona tutte le prenotazioni precedenti a maggio 2018
 NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionamento di PHPMyAdmin (richiesto per domani) e l'importazione del file db-hotel condiviso alle 11.40
 
+
+1. SELECT * FROM ospiti;
+2. SELECT * FROM ospiti WHERE document_type LIKE 'CI';
+3. SELECT * FROM paganti WHERE ospite_id IS NOT NULL
