@@ -11,5 +11,6 @@ NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionament
 
 1. SELECT * FROM ospiti;
 2. SELECT * FROM ospiti WHERE document_type LIKE 'CI';
-3. SELECT * FROM paganti WHERE ospite_id IS NOT NULL
-4. SELECT * FROM stanze WHERE floor = 1
+3. SELECT * FROM paganti WHERE ospite_id IS NOT NULL;
+4. SELECT * FROM stanze WHERE floor = 1;
+5. SELECT * FROM ospiti WHERE name LIKE 'E%';
