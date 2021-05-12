@@ -21,6 +21,15 @@ NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionament
 Esercitazione 12/05/2021
 
 Esercizio 1
+1. Conta gli ospiti raggruppandoli per anno di nascita
+2. Somma i prezzi dei pagamenti raggruppandoli per status
+3. Conta quante volte è stata prenotata ogni stanza
+4. Fai una analisi per vedere se ci sono ore in cui le prenotazioni sono più frequenti
+5. Quante prenotazioni ha fatto l'ospite che ha fatto più prenotazioni? (quante, non chi!)
+
+
+
+Esercizio 2
 1. Come si chiamano gli ospiti che hanno fatto più di due prenotazioni?
 2. Stampare tutti gli ospiti per ogni prenotazione
 3. Stamopare Nome, Cognome, Prezzo e Pagante per tutte le prenotazioni fatte a Maggio 2018
