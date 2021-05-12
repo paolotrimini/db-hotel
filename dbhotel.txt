@@ -27,6 +27,8 @@ Esercizio 1
 4. Fai una analisi per vedere se ci sono ore in cui le prenotazioni sono più frequenti
 5. Quante prenotazioni ha fatto l'ospite che ha fatto più prenotazioni? (quante, non chi!)
 
+1. SELECT YEAR(date_of_birth), COUNT(*) FROM ospiti GROUP BY date_of_birth;
+
 
 
 Esercizio 2
