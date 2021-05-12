@@ -17,3 +17,15 @@ NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionament
 6. SELECT name, lastname, date_of_birth, YEAR(NOW()) - YEAR (date_of_birth)
    FROM ospiti WHERE YEAR(NOW()) - YEAR (date_of_birth) < 30;
 7. SELECT * FROM prenotazioni WHERE created_at < '2018-05-01';
+
+Esercitazione 12/05/2021
+
+Esercizio 1
+1. Come si chiamano gli ospiti che hanno fatto più di due prenotazioni?
+2. Stampare tutti gli ospiti per ogni prenotazione
+3. Stamopare Nome, Cognome, Prezzo e Pagante per tutte le prenotazioni fatte a Maggio 2018
+4. Fai la somma di tutti i prezzi delle prenotazioni per le stanze del primo piano
+5. Prendi i dati di fatturazione per la prenotazione con id=7
+6. Le stanze sono state tutte prenotate almeno una volta?
+    (Visualizzare le stanze non ancora prenotate)
+
