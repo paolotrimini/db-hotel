@@ -29,6 +29,7 @@ Esercizio 1
 
 1. SELECT COUNT(id) AS 'numero_ospiti', YEAR(date_of_birth) AS 'nati_nel' FROM ospiti GROUP BY YEAR(date_of_birth);
 2. SELECT SUM(price),status FROM pagamenti GROUP BY status;
+3. SELECT COUNT(stanza_id) AS numero_prenotazioni , stanza_id FROM prenotazioni GROUP BY stanza_id;
 
 
 
