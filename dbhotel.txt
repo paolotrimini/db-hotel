@@ -1,11 +1,11 @@
 GOAL: in un foglio di testo, scrivere le query necessarie per rispondere ai seguenti quesiti:
-● Selezionare tutti gli ospiti
-● Selezionare tutti gli ospiti con document type = a CI
-● Selezionare i paganti che abbiano un ospite id associato
-● Selezionare tutte le stanze del primo piano
-● Selezionare tutti gli ospiti che iniziano per E
-● Selezionare tutti gli ospiti che abbiano meno di 30 anni
-● Seleziona tutte le prenotazioni precedenti a maggio 2018
+1. Selezionare tutti gli ospiti
+2. Selezionare tutti gli ospiti con document type = a CI
+3. Selezionare i paganti che abbiano un ospite id associato
+4. Selezionare tutte le stanze del primo piano
+5. Selezionare tutti gli ospiti che iniziano per E
+6. Selezionare tutti gli ospiti che abbiano meno di 30 anni
+7. Seleziona tutte le prenotazioni precedenti a maggio 2018
 NOTA: ricordo che per eseguire il compito e' necessario il corretto funzionamento di PHPMyAdmin (richiesto per domani) e l'importazione del file db-hotel condiviso alle 11.40
 
 
@@ -36,9 +36,17 @@ Esercizio 1 (GROUP BY)
 Esercizio 2 (JOIN)
 1. Come si chiamano gli ospiti che hanno fatto più di due prenotazioni?
 2. Stampare tutti gli ospiti per ogni prenotazione
-3. Stamopare Nome, Cognome, Prezzo e Pagante per tutte le prenotazioni fatte a Maggio 2018
+3. Stampare Nome, Cognome, Prezzo e Pagante per tutte le prenotazioni fatte a Maggio 2018
 4. Fai la somma di tutti i prezzi delle prenotazioni per le stanze del primo piano
 5. Prendi i dati di fatturazione per la prenotazione con id=7
 6. Le stanze sono state tutte prenotate almeno una volta?
     (Visualizzare le stanze non ancora prenotate)
+
+1. SELECT prenotazioni_has_ospiti.ospite_id , ospiti.name , ospiti.lastname , COUNT(ospiti.id) AS 'numero_prenotazioni'
+   FROM prenotazioni_has_ospiti
+   JOIN ospiti
+   	    ON prenotazioni_has_ospiti.ospite_id = ospiti.id
+   GROUP BY prenotazioni_has_ospiti.ospite_id
+   HAVING numero_prenotazioni > 2;
+2.
 
