@@ -48,5 +48,9 @@ Esercizio 2 (JOIN)
    	    ON prenotazioni_has_ospiti.ospite_id = ospiti.id
    GROUP BY prenotazioni_has_ospiti.ospite_id
    HAVING numero_prenotazioni > 2;
-2.
+
+2. SELECT prenotazioni_has_ospiti.prenotazione_id , ospiti.name, ospiti.lastname
+   FROM prenotazioni_has_ospiti
+   JOIN ospiti
+   	    ON prenotazioni_has_ospiti.ospite_id = ospiti.id;
 
