@@ -28,6 +28,7 @@ Esercizio 1
 5. Quante prenotazioni ha fatto l'ospite che ha fatto più prenotazioni? (quante, non chi!)
 
 1. SELECT YEAR(date_of_birth), COUNT(*) FROM ospiti GROUP BY date_of_birth;
+2. SELECT SUM(price),status FROM pagamenti GROUP BY status;
 
 
 
