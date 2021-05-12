@@ -69,4 +69,9 @@ Esercizio 2 (JOIN)
    JOIN pagamenti
       ON paganti.id = pagamenti.pagante_id
    WHERE pagamenti.prenotazione_id = 7;
-6.
+
+6. SELECT stanze.room_number
+   FROM prenotazioni
+   RIGHT JOIN stanze
+      ON prenotazioni.stanza_id = stanze.id
+   WHERE prenotazioni.id IS NULL;
