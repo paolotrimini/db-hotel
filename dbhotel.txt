@@ -63,5 +63,10 @@ Esercizio 2 (JOIN)
    JOIN pagamenti
    	  ON prenotazioni.id = pagamenti.prenotazione_id
    WHERE floor = 1;
-5.
+
+5. SELECT paganti.name, paganti.lastname , paganti.address
+   FROM paganti
+   JOIN pagamenti
+      ON paganti.id = pagamenti.pagante_id
+   WHERE pagamenti.prenotazione_id = 7;
 6.
