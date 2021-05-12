@@ -54,3 +54,14 @@ Esercizio 2 (JOIN)
    JOIN ospiti
    	  ON prenotazioni_has_ospiti.ospite_id = ospiti.id;
 
+3.
+
+4. SELECT SUM(price)
+   FROM stanze
+   JOIN prenotazioni
+      ON stanze.id = prenotazioni.stanza_id
+   JOIN pagamenti
+   	  ON prenotazioni.id = pagamenti.prenotazione_id
+   WHERE floor = 1;
+5.
+6.
